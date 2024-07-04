@@ -1,0 +1,16 @@
+.scrol_button{
+    position: fixed;
+    color: red;
+    font-size: 26px;
+    width: 45px;
+    height: 45px;
+   border-color: red;
+    bottom: 40px;
+    right: 40px;
+    background:transparent;
+}
+.scrol_button:hover{
+    border: none;
+    background-color: red;
+    color: white;
+}

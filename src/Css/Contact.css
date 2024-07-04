@@ -1,0 +1,164 @@
+.Contact{
+    overflow: hidden;
+}
+
+
+.contast_header{
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: #5b5b5b;
+    background-color: #F9F9F9;
+    padding: 20px 35px;
+}
+
+.contast_header span:nth-child(1){
+    color: #1C1C1C;
+cursor: pointer ;
+}
+.contast_header span:nth-child(1):hover{
+    color: red;
+}
+.contast_header span:nth-child(2){
+    font-size: 14px;
+}
+.contast_header span{
+    margin-left: 15px;
+}
+.contact_title{
+    font-size: 45px;
+    font-weight: 600;
+    color: #1C1C1C;
+    padding: 40px !important;
+}
+.contact_contacts{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.contact_contact{
+    display: flex;
+    gap: 15px;
+    margin-bottom: 60px;
+}
+.contact_icon{
+    width: 57.7px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #EAEAEA;
+    font-size: 24px;
+}
+.contact_adress h6{
+    font-weight: 600;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+.contact_adress span{
+    color: #5b5b5b;
+}
+.contact_form{
+display: flex;
+gap: 30px;
+padding: 0px 40px;
+
+}
+
+.contact_img img{
+ width: 630px;
+ height: 480px;
+}
+.contact_form_validation{
+    height: 480px;
+    width: 50%;
+    padding: 25px;
+    background-color: #F9F9F9;
+}
+.formElement_input{
+    outline: none;
+    width: 277px;
+    height: 40px;
+    border: 1px solid #5b5b5b;
+    margin-right: 14px;
+    padding: 10px;
+}
+.formElement_input2{
+    outline: none;
+    width: 277px;
+    height: 40px;
+    border: 1px solid red;
+    margin-right: 14px;
+    padding: 10px;
+}
+
+.formElement2_input{
+width: 570px;
+height: 40px;
+outline: none;
+border: 1px solid #5b5b5b;
+margin: 20px 0;
+padding: 10px;
+}
+.formElement2_input2{
+width: 570px;
+height: 40px;
+outline: none;
+border: 1px solid red;
+margin: 20px 0;
+padding: 10px;
+}
+
+input:hover{
+    border-color: red;
+}
+.formElement2_textarea{
+    width: 570px;
+    height: 117px;
+    outline: none;
+    border: 1px solid #5b5b5b;
+    margin: 20px 0;
+    padding: 10px;
+}
+.formElement2_textarea2{
+    width: 570px;
+    height: 117px;
+    outline: none;
+    border: 1px solid red;
+    margin: 20px 0;
+    padding: 10px;
+}
+.formElement2_textarea:hover{
+    border-color: red;
+}
+.contact_form_validation p{
+    font-size: 16px;
+    color: #5b5b5b;
+    margin-bottom: 30px;
+    line-height: 1.7rem;
+}
+.formButton{
+    width: 110px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #1C1C1C;
+    padding: 9px 12px;
+    border: none;
+    transition: 0.5s ease all;
+}
+.formButton span{
+    margin-left: 15px;
+}
+.formButton:hover{
+    background-color: red;
+}
+
+.btn_color{
+    width: 110px;
+    font-size: 16px;
+    color: #fff;
+    background-color: rgba(255, 0, 0, 0.497);
+    padding: 9px 12px;
+    border: none;
+    transition: 0.5s ease all;
+}

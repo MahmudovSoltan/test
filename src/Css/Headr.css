@@ -1,0 +1,252 @@
+.navbar{
+    width: 100%; 
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    z-index: 1;
+   background-color: #fff;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.navbar_shodov{
+    box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+
+}
+
+.navbar_right{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.navbar_links{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0; 
+}
+.navbar_li{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    padding: 38px 20px 38px 20px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.navbar_ul{
+    display: none;
+position: absolute;
+width: 220px;
+top: 100px;
+left: 9px;
+background-color: #fff;
+padding: 0;
+}
+.navbar_icon{
+    padding: 38px 20px 38px 20px;
+    margin: 0 20px;
+    font-size: 25px;
+    cursor: pointer;
+}
+.navbar_button{
+    padding: 38px 20px 38px 20px;
+}
+.navbar_link_red{
+    color: #EB1C33 !important;
+}
+.navbar_link{
+    color: #1C1C1C ;
+}
+.navbar_link:hover{
+    color: #EB1C33;
+}
+
+.navbar_ul_link{
+    position: relative;
+    color: #1C1C1C ;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.75em;
+    
+}
+.navbar_ul_li{
+    padding: 10px 15px 10px 15px; 
+}
+
+.navbar_ul_li:hover{
+    background-color:#eaeaea;
+}
+
+
+.navbar_ul_li:hover .navbar_ul_link{
+    display: block;
+    color: #EB1C33 !important;
+    
+}       
+.navbar_li:hover .navbar_ul{
+    display: block;
+} 
+.navbar_button{
+    border: none;
+    background-color: #EB1C33;
+    color: #fff;
+    padding: 12px 14px;
+    transition: 0.5s ease all;
+  
+}
+.navbar_button:hover{
+    background-color: #d5031b; 
+}
+.display_flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar_blog{
+    display: none;
+    background-color: #fff;
+    padding: 12px 14px;
+    position: absolute;
+    width: 220px !important;
+    right: 220px !important;
+}
+
+.navbar_ul_li:hover .navbar_blog{
+    display: block !important;
+}
+
+
+.navbar_blog:hover{
+    background-color:#eaeaea;
+}
+.navbar_blog_Link{
+    color: #1C1C1C ;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.75em;
+}
+
+.navbar_blog:hover .navbar_blog_Link{
+    color: #EB1C33 !important;
+}
+.navbar_Link_ul{
+    position: absolute;
+    display: none;
+    background-color: #fff;
+    left: -219px;
+    top: 144px;
+    padding: 0;
+}
+.navbar_Link_li{
+    width:220px ;
+    padding: 10px 15px 10px 15px; 
+    position: relative;
+    
+}
+
+
+.navbar_Link_li::after{
+content: "";
+position: absolute;
+top:0;
+left: 0;
+width: 2px;
+height: 100%;
+}
+.navbar_Link_li:hover::after{
+background-color: #EB1C33;
+}
+.navbar_Link_li2{
+    width:220px ;
+    padding: 10px 15px 10px 15px; 
+}
+
+.navbar_Link_li2::after{
+    content: "";
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    }
+    .navbar_Link_li2:hover::after{
+    background-color: #EB1C33;
+    }
+
+
+.navbar_li_Link{
+    color: #1C1C1C;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.75em;
+}
+.navbar_ul_li:hover .navbar_Link_ul{
+    display: block;
+}
+.navbar_Link_li:hover{
+    background-color:#eaeaea;
+    color: #EB1C33 ;
+    
+}
+.navbar_Link_li:hover .navbar_li_Link{
+    color: #EB1C33 ;
+}
+
+.iconRight{
+    margin-left: 15px;
+}
+.navbar_search{
+    position: relative;
+}
+/* .navbar_search_bottom{
+    position: absolute;
+    display: flex;
+}
+.searchInput{
+    border: none;
+    outline: none;
+} */
+.menu_icon{
+    font-size: 24px;
+    display: none;
+}
+.hamburger_menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 320px;
+    background-color: #fff;
+    padding: 5px;
+    padding-bottom: 60px;
+    z-index: 999;
+}
+.close_icon{
+    display: flex;
+    justify-content: end;
+    font-size: 25px;
+    padding: 15px;
+}
+.hamburger_menu ul{
+    margin: 0;
+    padding: 0;
+}
+.hamburger_menu li{
+    padding: 15px;
+}
+
+.hamburger_link{
+    font-size: 16px;
+    font-weight: 600;
+    color: #1C1C1C;
+}
+@media only screen and (max-width:1024px) {
+    .navbar{
+        position: fixed !important;
+        width: 100%;
+    }
+    .navbar_links{
+        display: none;
+    }
+}

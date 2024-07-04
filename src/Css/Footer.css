@@ -1,0 +1,94 @@
+footer{
+    background-color: #1C1C1C;
+  padding-top: 120px;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+.footer_logo{
+ position: relative;
+ margin-bottom: 40px;
+ font-size: 18px;
+ font-weight: 600;
+ line-height: 1.25rem;
+ color: #fff;
+}
+.footer_logo div{
+    position: absolute;
+    top: 10px;
+    left: 47px;
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+}
+.footer_adres{
+    color: #FFFFFFB2 !important;
+    padding: 0px 0px 10px 0px;
+}
+.footer_texts div{
+    color: #FFFFFFB2;
+    padding: 0px 0px 10px 0px;
+  
+}
+.footer_texts div:hover{
+color: red;
+cursor: pointer;  
+}
+.footer_icons{
+    margin-top: 40px;
+    display: flex;
+    gap: 15px;
+  
+}
+.footer_icons div{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+    width: 40px;
+    height: 40px;
+    font-size: 21px;
+    background-color: #323232;
+    padding-bottom: 0;
+    color: #fff !important;
+    transition: 0.5s ease all;
+}
+.footer_icons div:hover{
+    background-color: red;
+}
+.footer_sections{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 40px;
+    border-bottom: 0.5px solid #FFFFFFB2;
+}
+.input{
+    height: 48px;
+    background-color: #FFFFFF1A;
+    border: none;
+    width: 88%;
+    outline: none;
+    color: #fff !important;
+    margin-top: 25px;
+}
+.input::placeholder {
+    color: white; /* Placeholder rəngini ağ edir */
+}
+.button{
+    color: white;
+    width: 40px;
+    height: 47px;
+    background-color: red;
+    border: none;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: bold;
+}
+.footer_buttom{
+    font-size: 16px;
+    color: #fff;
+    padding: 40px 15px;
+    text-align: center;
+}
+.form{
+    display: flex;
+    align-items: flex-end;
+}

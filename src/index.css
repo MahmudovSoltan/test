@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    list-style: none !important;
+    text-decoration: none !important;
+    font-family: "Rubik", sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  
+    
+}
+
+.container{
+margin-right: auto;
+margin-left: auto;
+max-width: 90%;
+}
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+/* custom-carousel.css */
+.custom-carousel-indicators {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0 0;
+  }
+  
+  .custom-carousel-indicators li {
+    background-color: #f1f0f0;
+    width: 15px;
+    height: 6px;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    
+  }
+
+  .custom-carousel-indicators li:hover{
+    background-color: red;
+  }
+  
+  .custom-carousel-indicators .active {
+    background-color: red;
+  }
+
+  
+  .custom-carousel-indicator-wrapper {
+    position: absolute; 
+    right: 46%;
+    bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  .carousel_image1{
+    background-image: url(../src/layouts/image/banner-1.webp);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    transition: background-image 0.3s ease  ;
+  }
+  .carousel_image2{
+    background-image: url(../src/layouts/image/banner-2.webp);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    transition: background-image 0.3s ease  ;
+  }
+  .carousel_image3{
+    background-image: url(../src/layouts/image/banner-3.webp);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    transition: background-image 0.3s ease  ;
+  }
+  .carousel_image4{
+    background-image: url(../src/layouts/image/banner-4.webp);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    transition: background-image 1.5s ease  ;
+  }
+  
+  .all{
+    padding: 0 45px;
+  }

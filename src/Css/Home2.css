@@ -1,0 +1,345 @@
+.client_section{
+    padding: 120px 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff !important;
+   
+}
+.client_info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.client_text{
+    width: 780px;
+    font-size: 16px;
+    color: #1C1C1C;
+    margin: 60px 0 10px;
+    text-align: center;
+
+}
+.client_info div{
+    display: flex;
+    align-items: center;
+    grid-column-gap: 15px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+.client_image{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+.client_image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    text-align: center;
+}
+.client_name{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.client_name p{
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #5b5b5b;
+}
+.client_name h4{
+    font-size: 18px;
+    color: #1C1C1C;
+    font-weight: 600;
+    line-height: 1.7rem;
+}
+.client_wrap{
+    width: 780px;
+    display: flex;
+    flex-wrap: nowrap;
+    /* overflow: hidden; */
+}
+.client_slider{
+    overflow-x: auto;
+}
+
+  .carousel-indicators button.active{
+    background-color: red;
+    opacity: 1;
+  }
+
+.carousel-indicators [data-bs-target] {
+    box-sizing: content-box;
+    flex: 0 1 auto;
+    width: 16px;
+    height: 6px;
+    padding: 0;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #252323;
+    background-clip: padding-box;
+    border: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    opacity: .5;
+    transition: opacity .6s ease;
+}
+
+.carousel-indicators [data-bs-target]:hover{
+    background-color: red;
+    opacity: 1;
+}
+.affordable_section{
+    background-color: #F9F9F9;
+    padding: 120px 60px;
+}
+
+.affordable_plan{
+    width: 410px;
+    background-color: #FFFFFF;
+    padding: 30px;
+    margin-top: 60px;
+}
+.affordable_plan h4{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.25rem;
+    margin-bottom: 30px;
+    color: #1C1C1C;
+}
+.affordable-ammount span{
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.25rem;
+    margin-bottom: 10px;
+    color: #EB1C33;
+}
+.affordable-ammount{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.75em;
+    color: #5B5B5B;
+}
+.affordable-check{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.75em;
+    color: #5B5B5B;
+    padding-bottom: 15px;
+}
+.affordable-check span{
+    font-size: 25px;
+    margin-right: 10px;
+    color: #EB1C33;}
+.line-through{
+ text-decoration: line-through !important; 
+   font-size: 16px;
+ font-weight: 400;
+ line-height: 1.75em;
+ color: #979797;;
+ padding-bottom: 15px;
+ }
+ .line-through span{
+    font-size: 25px;
+    margin-right: 10px;
+    color: #5B5B5B; 
+ }
+ .afford-button button{
+    border: 2px solid black;
+    padding: 12px 24px 12px 24px;
+    color: #1C1C1C;
+    background-color: #FFFFFF;
+    margin-top: 20px;
+    transition: 0.5s ease all;
+    font-weight: 600;
+ }
+ .afford-button button:hover{
+    border: none;
+    background-color: #EB1C33;
+    color: #FFFFFF;
+ }
+ .afford-button button span{
+    margin-left: 10px;
+ }
+ .affordable_plans{
+    display: flex;
+    justify-content: space-between;
+
+ }
+ .blog_section{
+    padding: 120px 60px;
+ }
+ .blog_top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+ .blog_titel div{
+    margin: 0px 0px 20px 0px;
+    font-weight: 500;
+    color: #EB1C33;
+ }
+ .blog_titel h4{
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 1.25rem;
+    color: #1C1C1C;
+    margin-bottom: 40px;
+ }
+
+ .blog_button button{
+    border: 2px solid black;
+    padding: 12px 24px 12px 24px;
+    color: #1C1C1C;
+    background-color: #FFFFFF;
+    margin-top: 20px;
+    transition: 0.5s ease all;
+    font-weight: 600;
+ }
+ .blog_button button:hover{
+    background-color:red;
+    color: #FFFFFF;
+    border: none;
+ }
+ .blog_button span{
+    margin-left: 10px;
+ }
+ .blog_item img{
+    width: 410px;
+    height: 215px;
+ }
+ .blog_item div{
+    font-size: 16px;
+    color: #333333d5;
+    margin: 10px 0;
+ }
+ .blog_item div span{
+    position: relative;
+    margin-right: 40px;
+    cursor: pointer;
+    transition: 0.5s ease all;
+
+ }
+ .blog_item div span:hover{
+    color: red;
+ }
+ .blog_item div span::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: -20px;
+    width: 1px;
+    height: 100%;
+    background-color: #65626259;
+
+ }
+ .blog_item h6{
+    width: 410px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.75rem;
+    color: #1C1C1C;
+    cursor: pointer;
+ }
+ .blog_item h6:hover{
+    color: red;
+ }
+ .blog_item p{
+    width: 410px;
+    font-size: 16px;
+    line-height: 1.75rem;
+    color: #5b5b5b;
+    margin: 10px 0;
+ }
+ .blog_items{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+ }
+ .partners_section{
+    padding-top: 120px;
+    background-color: #F9F9F9;
+ }
+ .partners_top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ }
+ .partners_top div{
+    margin: 0px 0px 20px 0px;
+    font-weight: 500;
+    color: #EB1C33;
+ }
+ .partners_top h4{
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 1.25rem;
+    color: #1C1C1C;
+    margin-bottom: 40px;
+ }
+ .partners_imag{
+    width: 300px;
+    padding: 30px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+ }
+ .partners_imag h6{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.25rem;
+    margin-bottom: 10px;
+ }
+ .partners_imag div{
+    font-size: 16px;
+    color: #5b5b5b;
+    margin-bottom: 10px;
+ }
+ .partners_imgs{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 120px;
+    padding: 0 30px;
+ }
+ .hom_buttom{
+    background-image: url(../layouts/image/bnner-footer.webp);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100% !important;
+    height: 408px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ }
+ .hom_buttom h2{
+    font-size: 36px;
+    font-weight: 600;
+    color: #FFFFFF;
+    width: 640px;
+    text-align: center;
+
+ }
+ .hom_buttom button{
+    border: none;
+    padding: 12px 24px 12px 24px;
+    color: #1C1C1C;
+    background-color: #FFFFFF;
+    margin-top: 20px;
+    transition: 0.5s ease all;
+    font-weight: 600;
+
+ }
+ .hom_buttom button:hover{
+    background-color: red;
+    color: #fff;
+ }
+ .hom_buttom button span{
+    margin-left: 10px;
+ }
