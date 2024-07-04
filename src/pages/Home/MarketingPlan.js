@@ -48,7 +48,7 @@ function MarketingPlan() {
 <button>Read More <FaArrowRightLong /> </button>
 </div>
     </div>
-    
+   
     </div></div>
   )
 }

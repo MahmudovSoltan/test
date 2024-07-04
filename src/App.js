@@ -22,6 +22,7 @@ import BacktodoButton from './component/BacktodoButton';
 import AboutUs from './pages/Pages/AboutUs';
 import CourseLeyouteOne from './pages/Cources/CourseLeyouteOne';
 import CourseLeyouteTwo from './pages/Cources/CourseLeyouteTwo';
+import ProjectDetail from  './pages/Projects/ProjectDetail'
 
 function App() {
 const [playState,setPlayState]=useState(false)
@@ -62,6 +63,7 @@ const [playState,setPlayState]=useState(false)
         
         
         </Route>
+        <Route path='projectdetail' element={<ProjectDetail/>}/>
 
 
 

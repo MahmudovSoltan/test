@@ -56,7 +56,7 @@ window.scrollY>1?setShow(true):setShow(false)
             </Link>
             <ul className='navbar_ul'>
                 <li className='navbar_ul_li navbar_Link_li'>
-                    <Link className='navbar_ul_link'>Procet Detail</Link>
+                    <Link to="projectdetail" className='navbar_ul_link'>Procet Detail</Link>
                 </li>
             </ul>
           </li>
