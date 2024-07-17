@@ -7,7 +7,8 @@ import logo from '../../layouts/image/Citibank_logo.webp'
 import { FaArrowRightLong } from "react-icons/fa6";
 function Humanresours() {
   return (
-    <div ><div className='what_we_do_images'>
+    <div >
+      <div className='what_we_do_images'>
     <div className='wgat_we_do_image'>
 <img src={case2}/>
 

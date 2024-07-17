@@ -84,7 +84,7 @@
 }
 
 .about_info_paraqraf {
-    width: 664px;
+    max-width:  664px;
     color: #5b5b5b;
     font-size: 16px;
     font-weight: 400;
@@ -244,6 +244,7 @@
     display: flex;
     align-items: end;
     flex-direction: column;
+    cursor: pointer;
   
 
 }
@@ -639,6 +640,103 @@ text-align: center;
     transition: transform 1s;
 }
 
+@media only screen and (max-width:1024px) {
+   .home_about_imag{
+    width: 418px;
+    height: 455px;
+   }
+   .home_about_imag > img{
+    width: 100%;
+    height: 100%;
+   }
+   .about_info_top h3{
+    width: 492px;
+    font-size: 28px;
+    margin-bottom: 20px;
+   }
+   .home_about_info{
+    padding-left: 30px;
+   }
+   .about_info_bottom{
+    gap: 0;
+   }
+   .bottom_items{
+    width: 356px;
+   }
+   .about_help_bottom {
+    gap: 30px;
+   }
+   .bottom_item_left_two{
+    width: 286px;
+    text-align: end;
+   }
+   .bottom_items {
+    display: flex;
+    justify-content: flex-start;}
+    .help_image {
+        width: 602px;
+    }
+    
+.help_bottom_left p {
+    width: 361px;}
+.section_about{
+    padding: 0;
+}
+.about_help {
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+.aboutWhatWeDo_headr {
+    margin-top: 60px;
+}
+.what-we-do-sections ul{
+    gap: 30px;
+}
+.what_we_do_images{
+    padding: 0;
+}
+.wgat_we_do_image {
+    max-height: 226px;
+    margin-bottom: 20px;
+    margin-right: 0px;
+    margin-left: 20px;}
+.affordable_section {
+    background-color: #F9F9F9 !important;
+    padding: 60px 15px !important;
+}
+.blog_section {
+    padding: 60px 15px !important;
+}
+.blog_item img {
+    max-width: 309px !important;
+}
+.blog_item h6 {
+    max-width: 309px;
+    max-height: 45px;
+    overflow: hidden;
+    line-height: 1.3rem;
+}
+.partners_section {
+    padding-top: 60px !important;
 
+}
+.partners_imgs{
+    margin-bottom: 60px !important;
+    padding: 0 !important;
+}
+.partners_imag{
+    max-width: 225px;
+    margin-top: 30px !important;
+}
+.affordable_plan{
+    max-width: 309px !important;
+    background-color: #FFFFFF;
+    padding: 30px;
+    margin-top: 60px;
+}
+.affordable-check{
+    font-size: 15px !important;
+}
+}
 
 

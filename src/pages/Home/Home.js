@@ -282,38 +282,38 @@ let tx = 0
             <div className='bottom_right'>
               <div onClick={() => setSliderOnclick(0)} className='bottom_items'>
                 <div className='bottom_item_right'>
-                  <div className='bottom_item_left_one red'>Business Planning</div>
-                  <div className='bottom_item_left_two wihite'>Podcasting operational change management</div>
+                  <div className={`bottom_item_left_one ${sliderState[0] ? "red" : " "}`}>Business Planning</div>
+                  <div className={`bottom_item_left_two ${sliderState[0] ? "wihite" : " "}`}>Podcasting operational change management</div>
                 </div>
-                <div className='bottom_item_left wihite'>01</div>
+                <div className={`bottom_item_left ${sliderState[0] ? "wihite" : " "}`}>01</div>
               </div>
               <div onClick={() => setSliderOnclick(1)} className='bottom_items'>
                 <div className='bottom_item_right'>
-                  <div className='bottom_item_left_one'>Human Resources</div>
-                  <div className='bottom_item_left_two'>Podcasting operational change management</div>
+                  <div className={`bottom_item_left_one ${sliderState[1] ? "red" : " "}`}>Human Resources</div>
+                  <div className={`bottom_item_left_two ${sliderState[1] ? "wihite" : " "}`}>Podcasting operational change management</div>
                 </div>
-                <div className='bottom_item_left'>02</div>
+                <div className={`bottom_item_left ${sliderState[1] ? "wihite" : " "}`}>02</div>
               </div>
               <div onClick={() => setSliderOnclick(2)} className='bottom_items'>
                 <div className='bottom_item_right'>
-                  <div className='bottom_item_left_one'>Project Strategy</div>
-                  <div className='bottom_item_left_two'>Podcasting operational change management</div>
+                  <div className={`bottom_item_left_one ${sliderState[2] ? "red" : " "}`}>Project Strategy</div>
+                  <div className={`bottom_item_left_two ${sliderState[2] ? "wihite" : " "}`}>Podcasting operational change management</div>
                 </div>
-                <div className='bottom_item_left'>03</div>
+                <div className={`bottom_item_left ${sliderState[2] ? "wihite" : " "}`}>03</div>
               </div>
               <div onClick={() => setSliderOnclick(3)} className='bottom_items'>
                 <div className='bottom_item_right'>
-                  <div className='bottom_item_left_one'>Start Ups</div>
-                  <div className='bottom_item_left_two'>Podcasting operational change management</div>
+                  <div className={`bottom_item_left_one ${sliderState[3] ? "red" : " "}`}>Start Ups</div>
+                  <div className={`bottom_item_left_two ${sliderState[3] ? "wihite" : " "}`}>Podcasting operational change management</div>
                 </div>
-                <div className='bottom_item_left'>04</div>
+                <div className={`bottom_item_left ${sliderState[3] ? "wihite" : " "}`}>04</div>
               </div>
               <div onClick={() => setSliderOnclick(4)} className='bottom_items bottom_border'>
                 <div className='bottom_item_right'>
-                  <div className='bottom_item_left_one'>Financial Planning</div>
-                  <div className='bottom_item_left_two'>Podcasting operational change management</div>
+                  <div className={`bottom_item_left_one ${sliderState[4] ? "red" : " "}`}>Financial Planning</div>
+                  <div className={`bottom_item_left_two ${sliderState[4] ? "wihite" : " "}`}>Podcasting operational change management</div>
                 </div>
-                <div className='bottom_item_left'>05</div>
+                <div className={`bottom_item_left ${sliderState[4] ? "wihite" : " "}`}>05</div>
               </div>
             </div>
           </div>

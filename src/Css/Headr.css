@@ -1,7 +1,7 @@
 .navbar{
     width: 100%; 
     display: flex;
-    position: fixed;
+    position: fixed !important;
     justify-content: space-between;
     align-items: center;
     padding: 0;
@@ -33,6 +33,9 @@
     padding: 38px 20px 38px 20px;
     font-size: 16px;
     font-weight: 600;
+}
+.navbar_li:active{
+  color: red;
 }
 
 .navbar_ul{
@@ -243,10 +246,19 @@ background-color: #EB1C33;
 }
 @media only screen and (max-width:1024px) {
     .navbar{
-        position: fixed !important;
-        width: 100%;
+height: 96px;
     }
     .navbar_links{
         display: none;
+    }
+    .menu_icon{
+        display: block;
+        font-size: 40px;
+        margin-left: 20px;
+    }
+    .navbar_right {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 }

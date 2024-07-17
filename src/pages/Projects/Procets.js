@@ -31,7 +31,7 @@ function Procets() {
       </ul>
       <Outlet />
     </div>
-      
+    
      </div>
   )
 }

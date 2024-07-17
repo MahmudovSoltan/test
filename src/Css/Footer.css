@@ -92,3 +92,14 @@ cursor: pointer;
     display: flex;
     align-items: flex-end;
 }
+@media only screen and (max-width:1024px) {
+    footer {
+        padding-top: 60px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .footer_section{
+        max-width: 30%;
+    }
+    
+}

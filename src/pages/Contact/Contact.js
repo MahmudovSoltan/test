@@ -17,6 +17,8 @@ const center = {
   lng: -38.523,
 };
 function Contact() {
+
+  
 const [name,setName]=useState("")
 const [email,setEmail]=useState("")
 const [number,setNumber]=useState("")

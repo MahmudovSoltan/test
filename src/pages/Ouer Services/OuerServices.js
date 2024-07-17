@@ -1,4 +1,4 @@
-import React, {useState } from 'react'
+import React, {useState , useRef } from 'react'
 import { FaChevronRight } from "react-icons/fa6";
 import '../../Css/OuerServices.css'
 import { Fade } from "react-awesome-reveal";
@@ -59,7 +59,12 @@ const openClick4 = () => {
     setOpen4(true)
     setOpen2(false)
   }
+
 };
+
+
+
+
   return (
     <div>
 <br/>
@@ -67,7 +72,7 @@ const openClick4 = () => {
 <br/>
 <br/>
       <div className='ouerServicess_headr'>
-      <span>Home</span><span><FaChevronRight/></span><span>Procets</span>
+      <span>Home</span><span><FaChevronRight/></span><span>Our Services</span>
       </div>
       <h2>Our Services</h2>
 
@@ -189,9 +194,9 @@ More than 30,000 amazing feedbacks
         <div className='text_carousels'>
           <div className="carouel_titel">WORKING PROCESS</div>
           <h3>A Simple Yet Powerful And Efficient Process</h3>
-<div  className='text_images_items '>
-<div  className='text_image_item '>
-  <div className='text_item_line ' >
+<div className='text_images_items '>
+<div    className='text_image_item '  >
+  <div className='text_item_line '>
   </div>
   <div className='text_item_right'>
     <div className='text_number'>01</div>
@@ -204,7 +209,7 @@ More than 30,000 amazing feedbacks
   </div>
 
 </div>
-<div className='text_image_item' >
+<div className='text_image_item'  >
   <div className='text_item_line'  >
   </div>
   <div className='text_item_right' >
