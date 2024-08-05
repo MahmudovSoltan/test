@@ -16,6 +16,8 @@ const center = {
   lat: -3.745,
   lng: -38.523,
 };
+
+
 function Contact() {
 
   
@@ -46,10 +48,7 @@ const handleSubmit = (e) => {
     setNumber("")
     setText('')
   }
-  setNameError(false);
-  setEmailError(false);
-  setNumberError(false);
-  setTextError(false);
+
 
   if (name == "") {
     setNameError(true);

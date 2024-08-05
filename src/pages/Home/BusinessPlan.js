@@ -8,6 +8,7 @@ import case4 from '../../layouts/image/case-bigszie-02-600x439.webp'
 import case5 from '../../layouts/image/case-bigszie-01-600x439.webp'
 import case6 from '../../layouts/image/case-bigszie-06-600x439.webp'
 import logo from '../../layouts/image/Citibank_logo.webp'
+import sercule from '../../layouts/image/download.svg'
 import { FaArrowRightLong } from "react-icons/fa6";
 
 function BusinessPlan() {
@@ -91,9 +92,9 @@ function BusinessPlan() {
 {
 
 btn&&
-<div className='button_load'>
+<div className='button_load sercule'>
 
-    <button onClick={changeLoad}>Load More</button>
+<button onClick={changeLoad}>Load More <span className="sercule"><img src = {sercule}/></span></button>
 
 </div>
 }

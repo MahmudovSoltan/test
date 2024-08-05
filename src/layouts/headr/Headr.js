@@ -9,8 +9,11 @@ import { FaChevronRight } from "react-icons/fa";
 import { BsDiamond } from "react-icons/bs";
 import { MdOutlineMenu } from "react-icons/md";
 import { IoCloseSharp } from "react-icons/io5";
+import { IoMdClose } from "react-icons/io";
 
 function Headr() {
+
+    
 const [show,setShow]=useState(false)
 useEffect(()=>{
 
@@ -20,6 +23,83 @@ window.scrollY>1?setShow(true):setShow(false)
 })
 
 },[])
+
+
+
+const [sideBar,setSideBar] = useState(false)
+const [menu,setMenu] = useState(false)
+const [menu1,setMenu1] = useState(false)
+const [menu2,setMenu2] = useState(false)
+const [menu3,setMenu3] = useState(false)
+const [menu4,setMenu4] = useState(false)
+const [menu5,setMenu5] = useState(false)
+
+
+function openSideBar() {
+    if (sideBar == false) {
+        setSideBar(true)
+    } else {
+        setSideBar(false)
+        setMenu(false)
+        setMenu1(false)
+        setMenu2(false)
+        setMenu3(false)
+        setMenu4(false)
+        setMenu5(false)
+    }
+    
+}
+
+function openMenu() {
+    if (menu == false) {
+        setMenu(true)
+    } else {
+        setMenu(false)
+    }
+    
+}
+function openMenu1() {
+    if (menu1 == false) {
+        setMenu1(true)
+    } else {
+        setMenu1(false)
+    }
+    
+}
+function openMenu2() {
+    if (menu2 == false) {
+        setMenu2(true)
+    } else {
+        setMenu2(false)
+    }
+    
+}
+function openMenu3() {
+    if (menu3 == false) {
+        setMenu3(true)
+    } else {
+        setMenu3(false)
+    }
+    
+}
+function openMenu4() {
+    if (menu4 == false) {
+        setMenu4(true)
+    } else {
+        setMenu4(false)
+    }
+    
+}
+function openMenu5() {
+    if (menu5 == false) {
+        setMenu5(true)
+    } else {
+        setMenu5(false)
+    }
+    
+}
+
+
     return (
 
                                       
@@ -65,7 +145,7 @@ window.scrollY>1?setShow(true):setShow(false)
             </Link>
             <ul className='navbar_ul'>
                 <li className='navbar_ul_li navbar_Link_li'>
-                    <Link className='navbar_ul_link'>Start Ups</Link>
+                    <Link  className='navbar_ul_link'>Start Ups</Link>
                 </li>
                 <li className='navbar_ul_li navbar_Link_li'>
                     <Link className='navbar_ul_link'>Organisational</Link>
@@ -142,12 +222,126 @@ window.scrollY>1?setShow(true):setShow(false)
                         <button className='navbar_button'>Get In Touch <span className='iconRight'> < FaArrowRightLong/></span> </button>
                     </div>
 
-<div className='menu_icon'><MdOutlineMenu/></div>
+<div className='menu_icon' onClick={openSideBar} ><MdOutlineMenu/></div>
 
                 </div>
         
 
 
+
+{sideBar&&
+<div className='position_absolute'>
+    <div className="side-menu-close-icon" onClick={openSideBar}>
+        <IoMdClose/>
+
+    </div>
+<ul className=''>
+          <li className='side_navbar_li'>
+            <Link className='side_navbar_link red' to="/">Home</Link>
+          </li>
+          <li className=' side_navbar_li'>
+            <div className="display_flex">
+            <Link className='side_navbar_link' to="/courses">Courses</Link>
+            <div> <span onClick={openMenu}><FaAngleDown/></span></div>
+
+            </div>
+
+{
+menu&&        <ul className=''>
+                
+                <li className=' '>
+                    <Link to="CourseLeyouteOne" className='side_navbar_ul_li '> Courses Leyout 1</Link>
+                </li>
+                <li className=' '>
+                    <Link to="CourseLeyouteTwo" className='side_navbar_ul_li'> Courses Leyout 2</Link>
+                </li>
+            </ul>}
+            <Outlet/>
+          </li>
+          <li className='side_navbar_li'>
+          <div className="display_flex">  <Link className='side_navbar_link' to="/project">Projects
+            </Link>
+            <div onClick={openMenu1}><FaAngleDown/></div></div>
+{  menu1&&          <ul className=''>
+                <li className=' '>
+                    <Link to="projectdetail" className='side_navbar_ul_li'>Procet Detail</Link>
+                </li>
+            </ul>}
+          </li>
+          <li className='side_navbar_li'>
+          <div className="display_flex">
+
+            <Link className='side_navbar_link' to="/ourservices">Our Services
+            </Link>
+            <div><span onClick={openMenu2}><FaAngleDown/></span></div>
+</div>
+{   menu2 &&         <ul className=''>
+                <li className=' '>
+                    <Link className='side_navbar_ul_li'>Start Ups</Link>
+                </li>
+                <li className=' '>
+                    <Link className='side_navbar_ul_li'>Organisational</Link>
+                </li>
+                <li className=' '>
+                    <Link className='side_navbar_ul_li'>Stragety Consaltncy</Link>
+                </li>
+            </ul>}
+          </li>
+          <li className='side_navbar_li'>
+          <div className="display_flex">
+            <Link className='side_navbar_link'>Pages
+            </Link>
+            <div><span onClick={openMenu3}><FaAngleDown/></span></div>
+
+</div>
+{    menu3 &&        <ul className=''>
+                <li className=' '>
+                    <Link to="aboutUs" className='side_navbar_ul_li '>About Us</Link>
+                </li>
+                <li  className='  '>
+                    <div>
+                    <Link className='side_navbar_ul_li'>Blog <span onClick={openMenu4}><FaAngleDown/></span></Link>
+                    </div>
+{    menu4 &&           <ul className=' '>
+                <li className='padding'>
+                    <Link className=' side_navbar_ul_li '>Blog Sidebar Right</Link>
+                </li>
+               </ul>}
+                
+                </li>
+                <li className=' '>
+                    <Link className='side_navbar_ul_li'>Events</Link>
+                </li>
+                <li className=''>
+                    <div className=''><Link className='side_navbar_ul_li'>Shop <span onClick={openMenu5}><FaAngleDown/></span></Link></div>
+{    menu5 &&        <ul className='padding'>
+                <li className='' >
+                    <Link className='side_navbar_ul_li'>Product Catagories</Link>
+                </li>
+                <li className=''>
+                    <Link className='side_navbar_ul_li' >Product Tags</Link>
+                </li>
+                <li className=''>
+                    <Link className='side_navbar_ul_li'>Product Details</Link>
+                </li>
+                <li className=''>
+                    <Link className='side_navbar_ul_li'>Cart</Link>
+                </li>
+                
+            </ul>}
+                </li>
+                <li className='  '>
+                    <Link className='side_navbar_ul_li'>Our Team</Link>
+                </li>
+            </ul>}
+          </li>
+          <li className='side_navbar_li'>
+            <Link className='side_navbar_link' to="/contact">Contact</Link>
+          </li>
+
+        </ul>
+        <Outlet/>
+</div>}
 
 
             </nav>

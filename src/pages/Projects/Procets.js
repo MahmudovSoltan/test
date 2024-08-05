@@ -7,6 +7,7 @@ import { Link, Outlet } from 'react-router-dom';
 // import img1 from '../../layouts/image/case4.webp'
 function Procets() {
   return (
+
     <div >
       <br/>
       <br/>
@@ -20,7 +21,7 @@ function Procets() {
 <h2 className="projects_h">Projects</h2>   
     </div>  
     <div className="what-we-do-sections ul">
-      <ul>
+      <ul className = "container">
         <li> <Link to="/project" className='what-we-do-setionc-link red'> All</Link></li>
         <li> <Link to="humanresourse" className='what-we-do-setionc-link'> Human Resources</Link></li>
         <li> <Link to="solicitory" className='what-we-do-setionc-link'> Solicitory</Link></li>
@@ -31,7 +32,6 @@ function Procets() {
       </ul>
       <Outlet />
     </div>
-    
      </div>
   )
 }

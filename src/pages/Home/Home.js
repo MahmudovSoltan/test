@@ -7,6 +7,7 @@ import aboutImage from '../../layouts/image/about-box.webp';
 import { Link, Outlet } from 'react-router-dom';
 import { IoCheckmark } from "react-icons/io5";
 import { Fade} from "react-awesome-reveal";
+import Slider from "react-slick";
 import courseThump from '../../layouts/image/course-thumb-04.webp';
 import courseThump2 from '../../layouts/image/course-thumb-03.webp'
 import courseThump3 from '../../layouts/image/course-thumb-06.webp'
@@ -28,6 +29,7 @@ import { FaXTwitter } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa";
 import { BiRightArrow } from "react-icons/bi";
 import { IoCloseOutline } from "react-icons/io5";
+
 
 function Home({setPlayState}) {
   
@@ -55,26 +57,7 @@ function Home({setPlayState}) {
   };
 
 
-const slider =  useRef()
 
-let tx = 0
-  const goLeft = () => {
-    tx = -21
-    slider.current.style.transform=`translateX(${tx}%)`
-  };
-
-  const goRight = () => {
-
-    if (tx >0) {
-      tx = 21
-    }
- 
-    slider.current.style.transform=`translateX(${tx}%)`
-  };
-  const goavarage = () => {
-    tx = 0
-      slider.current.style.transform=`translateX(${tx}%)`
-    };
   
 
   
@@ -96,13 +79,47 @@ let tx = 0
         return () => clearInterval(interval);
       }, []);
    
+      const settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+              infinite: true,
+              dots: true
+            }
+          },
+          {
+            breakpoint: 760,
+            settings: {
+              slidesToShow: 1,
+              initialSlide: 2
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+        ]
 
+      };
   return (
     <div className='home'>
       <br />
       <br />
       <br />
 
+  
+     
 
       <Carousel activeIndex={index} onSelect={handleSelect} controls={false} indicators={false}>
         <Carousel.Item>
@@ -350,66 +367,15 @@ let tx = 0
 
       </section>
 
+
       <section className='slider_images'>
-        
-<div className='slider_images_titel'>
+      <div className='slider_images_titel'>
   <div>OUR EXPERTS</div>
   <h3>Meet Our Experts</h3>
 </div>
 
-
-
-<div  ref={slider} className='slider_imag_wrap' >
- 
-  <div className='image_wrap' >
-    <div className='slider_imag'>
-    <img src={team1}/>
-    <div >
-<span><FaFacebookF/></span><span><FaYoutube/></span><span><FaXTwitter/></span><span><FaLinkedinIn/></span>
-    </div>
-    </div>
-  
-  <div className='slider_imag_text'><h3> Mark Richardson</h3>
-  <p>Consultant</p>
-  </div>
-  </div>
-  <div className='image_wrap'>
-    <div className='slider_imag'>
-    <img src={team2}/>
-    <div >
-<span><FaFacebookF/></span><span><FaYoutube/></span><span><FaXTwitter/></span><span><FaLinkedinIn/></span>
-    </div>
-    </div>
-  
-  <div className='slider_imag_text'><h3>Megan Daviss</h3>
-  <p>Consultant</p>
-  </div>
-  </div>
-  <div className='image_wrap'>
-    <div className='slider_imag'>
-    <img src={team3}/>
-    <div >
-<span><FaFacebookF/></span><span><FaYoutube/></span><span><FaXTwitter/></span><span><FaLinkedinIn/></span>
-    </div>
-    </div>
-  
-  <div className='slider_imag_text'  ><h3> Moll Rissa</h3>
-  <p>Consultant</p>
-  </div>
-  </div>
-  <div className='image_wrap' >
-    <div className='slider_imag'>
-    <img src={team1}/>
-    <div >
-<span><FaFacebookF/></span><span><FaYoutube/></span><span><FaXTwitter/></span><span><FaLinkedinIn/></span>
-    </div>
-    </div>
-  
-  <div className='slider_imag_text'><h3> Mark Richardson</h3>
-  <p>Consultant</p>
-  </div>
-  </div>
-  <div className='image_wrap' >
+      <Slider {...settings}>
+      <div className='image_wrap' >
     <div className='slider_imag'>
     <img src={team2}/>
     <div>
@@ -422,16 +388,34 @@ let tx = 0
   </div>
 
   </div>
+  <div className='image_wrap' >
+    <div className='slider_imag'>
+    <img src={team3}/>
+    <div>
+<span><FaFacebookF/></span><span><FaYoutube/></span><span><FaXTwitter/></span><span><FaLinkedinIn/></span>
+    </div>
+    </div>
+  
+  <div className='slider_imag_text'><h3> Megan Daviss</h3>
+  <p>Consultant</p>
+  </div>
 
-</div>
-<div>
-<span className='chance_image'    onClick={goRight} ></span>
-<span className='chance_image' onClick={goavarage} ></span>
-<span className='chance_image' onClick={goLeft} ></span>
+  </div>
+  <div className='image_wrap' >
+    <div className='slider_imag'>
+    <img src={team1}/>
+    <div>
+<span><FaFacebookF/></span><span><FaYoutube/></span><span><FaXTwitter/></span><span><FaLinkedinIn/></span>
+    </div>
+    </div>
+  
+  <div className='slider_imag_text'><h3> Megan Daviss</h3>
+  <p>Consultant</p>
+  </div>
 
-</div>
+  </div>  
+      </Slider>
       </section>
-
       <section className='videoplay_section'>
 
         <div className='autoplay_video'>

@@ -90,3 +90,10 @@ max-width: 90%;
   .all{
     padding: 0 45px;
   }
+
+  @media only screen and (max-width:860px){
+   body{
+  overflow-x: hidden;
+   }
+
+}

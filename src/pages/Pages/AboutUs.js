@@ -27,6 +27,7 @@ function AboutUs() {
         indicator.classList.toggle('active', idx === index);
       });
     }, [index]);
+    
   
     const settings = {
         dots: true,
@@ -230,7 +231,8 @@ function AboutUs() {
         </div>
        
       
-      </Slider></Fade>
+      </Slider>
+      </Fade>
     </div>
 
 
