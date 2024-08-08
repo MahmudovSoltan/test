@@ -175,7 +175,7 @@ More than 30,000 amazing feedbacks
         <div className='carousel_images2'>
           <img src='https://coaching.thimpress.com/business-consulting/wp-content/uploads/sites/52/2024/03/service-02.jpg' alt='carousel1'/>
         </div>
-        <div className='carousel_images2' >
+        {/* <div className='carousel_images2' >
           <img src='https://coaching.thimpress.com/business-consulting/wp-content/uploads/sites/52/2024/05/img-tab-slide-2.jpg' alt='carousel1'/>
         </div>
         <div className='carousel_images2'>
@@ -186,7 +186,7 @@ More than 30,000 amazing feedbacks
         </div>
         <div className='carousel_images2'>
           <img src='https://coaching.thimpress.com/business-consulting/wp-content/uploads/sites/52/2024/05/img-tab-slide-2.jpg' alt='carousel1'/>
-        </div>
+        </div> */}
 
         </div>
 

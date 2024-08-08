@@ -745,6 +745,19 @@ text-align: center;
 .affordable-check{
     font-size: 15px !important;
 }
+.slider_imag {
+    max-width:360px;
+}
+.slick-slide img {
+    display: block;
+    width: 100%;
+}
+.slider_imag div{
+    width: 100%;
+}
+.slider_images {
+    padding: 60px 15px;
+}
 }
 @media only screen and (max-width:860px){
     .home_aboutUs {
@@ -830,7 +843,14 @@ text-align: center;
     .partners_imag {
         width: 383px !important;
         height: 173px;
-    }    
+    } 
+
+    .help_image div{
+        display: flex;
+        justify-content: center ;
+    }
+    
+    
 }
 @media only screen and (max-width:765px){
     .home_text {
@@ -933,6 +953,11 @@ text-align: center;
         width: 551px;
         height: 600px;
         transform: translateX(15%);
+    }
+    .image_wrap {
+        display: flex !important;
+        flex-direction: column;
+        align-items: center;
     }
 
 }

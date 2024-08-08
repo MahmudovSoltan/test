@@ -9,6 +9,8 @@ import case6 from '../../layouts/image/case-bigszie-06-600x439.webp'
 import logo from '../../layouts/image/Citibank_logo.webp'
 import sercule from '../../layouts/image/download.svg'
 import { FaArrowRightLong } from "react-icons/fa6";
+import { LuSun } from "react-icons/lu";
+
 function All() {
     const [load,setLoad]=useState(false)
     const [btn,setBtn]=useState(true)

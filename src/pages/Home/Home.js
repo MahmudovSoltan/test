@@ -30,7 +30,6 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { BiRightArrow } from "react-icons/bi";
 import { IoCloseOutline } from "react-icons/io5";
 
-
 function Home({setPlayState}) {
   
   const [index, setIndex] = useState(0);
@@ -96,7 +95,7 @@ function Home({setPlayState}) {
             }
           },
           {
-            breakpoint: 760,
+            breakpoint: 765,
             settings: {
               slidesToShow: 1,
               initialSlide: 2
