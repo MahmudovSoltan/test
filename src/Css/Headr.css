@@ -308,11 +308,26 @@ height: 96px;
         justify-content: space-between;
         align-items: center;
     }
+    .navbar {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 }
 @media only screen and (max-width:765px){
 .navbar_search
 ,.navbar_button{
     display: none;
+}
+
+
+}
+@media only screen and (max-width:360px){
+.navbar{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.navbar_logo{
+    width: 195px;
 }
 
 

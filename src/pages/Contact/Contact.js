@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from 'react'
+import React, {  useState } from 'react'
 import { FaChevronRight } from "react-icons/fa6";
-import { Fade ,Slide,Reveal} from "react-awesome-reveal";
+import { Fade } from "react-awesome-reveal";
 import '../../Css/Contact.css'
 import { SlPhone } from "react-icons/sl";
 import { MdOutlineEmail } from "react-icons/md";

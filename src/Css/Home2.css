@@ -252,6 +252,13 @@
     line-height: 1.75rem;
     color: #5b5b5b;
     margin: 10px 0;
+      display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2; /* 3 satırla sınırlandır */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.5em; /* Satır yüksekliğini belirler */
+  max-height: 4.5em; 
 
  }
  .blog_items{
@@ -300,6 +307,7 @@
     font-size: 16px;
     color: #5b5b5b;
     margin-bottom: 10px;
+    text-align: center;
  }
  .partners_imgs{
     display: flex;

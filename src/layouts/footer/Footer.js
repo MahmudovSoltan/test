@@ -30,7 +30,7 @@ function Footer() {
 
   </div>
 </div>
-<div className='footer_section'>
+<div className='footer_section margin-left'>
   <div className='footer_logo'>
   Userful Link
   </div>

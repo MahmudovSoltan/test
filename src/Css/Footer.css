@@ -101,6 +101,9 @@ cursor: pointer;
     .footer_section{
     width: 30%;
     }
+    .margin-left{
+        margin-left: 40px;
+    }
     
 }
 
@@ -139,5 +142,12 @@ cursor: pointer;
         position: absolute;
         top: 10px;
         left: 76px;
+    }
+}
+ @media only screen and (max-width: 425px) {
+    .footer_logo div {
+        position: absolute;
+        top: 10px;
+        left: 32%;
     }
 }

@@ -13,7 +13,15 @@ import { IoMdClose } from "react-icons/io";
 
 function Headr() {
 
-    
+    const [sliderState2, setSliderState2] = useState([true, false, false, false, false,false]);
+    const setSliderOnclick2 = (sliderIndex2) => {
+        const newSliderState2 = sliderState2.map((_, idx) => idx === sliderIndex2);
+        setSliderState2(newSliderState2);
+      };
+
+
+
+
 const [show,setShow]=useState(false)
 useEffect(()=>{
 
@@ -115,10 +123,10 @@ function openMenu5() {
                     <div>
                 <ul className='navbar_links'>
           <li className='navbar_li'>
-            <Link className='navbar_link_red' to="/">Home</Link>
+            <Link   className={`navbar_link ${sliderState2[0] ? "red" : " "}`} onClick={() => setSliderOnclick2(0)} to="/">Home</Link>
           </li>
           <li className='navbar_li '>
-            <Link className='navbar_link' to="/courses">Courses <FaAngleDown/></Link>
+            <Link className={`navbar_link ${sliderState2[1] ? "red" : " "}`} onClick={() => setSliderOnclick2(1)} to="/courses">Courses <FaAngleDown/></Link>
 
             <ul className='navbar_ul'>
                 
@@ -132,7 +140,7 @@ function openMenu5() {
             <Outlet/>
           </li>
           <li className='navbar_li'>
-            <Link className='navbar_link' to="/project">Projects<FaAngleDown/>
+            <Link className={`navbar_link ${sliderState2[2] ? "red" : " "}`} onClick={() => setSliderOnclick2(2)} to="/project">Projects<FaAngleDown/>
             </Link>
             <ul className='navbar_ul'>
                 <li className='navbar_ul_li navbar_Link_li'>
@@ -141,7 +149,7 @@ function openMenu5() {
             </ul>
           </li>
           <li className='navbar_li'>
-            <Link className='navbar_link' to="/ourservices">Our Services<FaAngleDown/>
+            <Link className={`navbar_link ${sliderState2[3] ? "red" : " "}`} onClick={() => setSliderOnclick2(3)} to="/ourservices">Our Services<FaAngleDown/>
             </Link>
             <ul className='navbar_ul'>
                 <li className='navbar_ul_li navbar_Link_li'>
@@ -156,10 +164,10 @@ function openMenu5() {
             </ul>
           </li>
           <li className='navbar_li'>
-            <Link className='navbar_link'>Pages<FaAngleDown/>
+            <Link className={`navbar_link ${sliderState2[4] ? "red" : " "}`} >Pages<FaAngleDown/>
             </Link>
             <ul className='navbar_ul'>
-                <li className='navbar_ul_li navbar_Link_li'>
+                <li className='navbar_ul_li navbar_Link_li' onClick={() => setSliderOnclick2(4)}>
                     <Link to="aboutUs" className='navbar_ul_link '>About Us</Link>
                 </li>
                 <li  className='navbar_ul_li display_flex navbar_Link_li'>
@@ -202,7 +210,7 @@ function openMenu5() {
             </ul>
           </li>
           <li className='navbar_li'>
-            <Link className='navbar_link' to="/contact">Contact</Link>
+            <Link className={`navbar_link ${sliderState2[5] ? "red" : " "}`} onClick={() => setSliderOnclick2(5)} to="/contact">Contact</Link>
           </li>
 
         </ul>

@@ -42,6 +42,15 @@ function Home({setPlayState}) {
 
 
 
+  const [sliderState1, setSliderState1] = useState([true, false, false, false, false,false,false]);
+
+  const setSliderOnclick1 = (sliderIndex1) => {
+    const newSliderState1 = sliderState1.map((_, idx) => idx === sliderIndex1);
+    setSliderState1(newSliderState1);
+  };
+
+
+
   useEffect(() => {
     const indicators = document.querySelectorAll('.custom-carousel-indicators li');
     indicators.forEach((indicator, idx) => {
@@ -73,7 +82,7 @@ function Home({setPlayState}) {
               return prevNumber;
             }
           });
-        }, 290); 
+        }, 190); 
 
         return () => clearInterval(interval);
       }, []);
@@ -181,7 +190,7 @@ function Home({setPlayState}) {
           </div>
 </Fade>
 <br/>
-<Fade direction="right" triggerOnce="true" duration={2500} >
+<Fade direction="right" triggerOnce="true" duration={1500} >
 
           <div className='home_about_info'>
             <div className='about_info_top'>
@@ -345,13 +354,13 @@ function Home({setPlayState}) {
     </div>
     <div className="what-we-do-sections ul">
       <ul>
-        <li> <Link to="/" className='what-we-do-setionc-link red'> All</Link></li>
-        <li> <Link to="humanresourse" className='what-we-do-setionc-link'> Human Resources</Link></li>
-        <li> <Link to="solicitory" className='what-we-do-setionc-link'> Solicitory</Link></li>
-        <li> <Link to="strategy" className='what-we-do-setionc-link'> Strategy</Link></li>
-        <li> <Link to="marketingplan" className='what-we-do-setionc-link'>Marketing Plan</Link></li>
-        <li> <Link to="financial" className='what-we-do-setionc-link'>Financial</Link></li>
-        <li> <Link to="businessplan" className='what-we-do-setionc-link'>Business Plan</Link></li>
+        <li> <Link to="/" className={`what-we-do-setionc-link ${sliderState1[0] ? "red" : " "}`} onClick={() => setSliderOnclick1(0)}> All</Link></li>
+        <li> <Link to="humanresourse"  className={`what-we-do-setionc-link ${sliderState1[1] ? "red" : " "}`} onClick={() => setSliderOnclick1(1)}> Human Resources</Link></li>
+        <li> <Link to="solicitory"  className={`what-we-do-setionc-link ${sliderState1[2] ? "red" : " "}`} onClick={() => setSliderOnclick1(2)}> Solicitory</Link></li>
+        <li> <Link to="strategy"  className={`what-we-do-setionc-link ${sliderState1[3] ? "red" : " "}`} onClick={() => setSliderOnclick1(3)}> Strategy</Link></li>
+        <li> <Link to="marketingplan"  className={`what-we-do-setionc-link ${sliderState1[4] ? "red" : " "}`} onClick={() => setSliderOnclick1(4)}>Marketing Plan</Link></li>
+        <li> <Link to="financial"  className={`what-we-do-setionc-link ${sliderState1[5] ? "red" : " "}`} onClick={() => setSliderOnclick1(5)}>Financial</Link></li>
+        <li> <Link to="businessplan"  className={`what-we-do-setionc-link ${sliderState1[6] ? "red" : " "}`} onClick={() => setSliderOnclick1(6)}>Business Plan</Link></li>
       </ul>
       <Outlet />
     </div>
@@ -382,7 +391,7 @@ function Home({setPlayState}) {
     </div>
     </div>
   
-  <div className='slider_imag_text'><h3> Megan Daviss</h3>
+  <div className='slider_imag_text'><h3> Molli Risa</h3>
   <p>Consultant</p>
   </div>
 
@@ -408,7 +417,7 @@ function Home({setPlayState}) {
     </div>
     </div>
   
-  <div className='slider_imag_text'><h3> Megan Daviss</h3>
+  <div className='slider_imag_text'><h3> Mark Richardson</h3>
   <p>Consultant</p>
   </div>
 

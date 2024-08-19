@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { TfiAngleDoubleUp } from "react-icons/tfi";
-import './BacktoTopButton/scrollbutton.css'
+import '../BacktoTopButton/scrollbutton.css'
 function BacktodoButton() {
 const [bactoButton,setBackToButton]=useState(false)
 

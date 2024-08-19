@@ -453,6 +453,7 @@
 
 .slider_imag:hover.slider_imag div{
     opacity: 1;
+   
 }
 
 .slider_imag div span{
@@ -470,6 +471,7 @@
 
 .slider_imag div span:hover{
     background-color: red;
+    cursor: pointer;
 }
 
 .slider_imag_wrap{
@@ -758,6 +760,57 @@ text-align: center;
 .slider_images {
     padding: 60px 15px;
 }
+.image_wrap {
+    display: flex !important;
+    width: 30%;
+    flex-direction: column;
+    align-items: center;
+}
+.home_aboutUs {
+    padding-left: 10px;
+}
+}
+@media only screen and (max-width:988px) {
+    .about_info_top h3 {
+        width: 400px;
+    }
+    .help_image {
+        width: 674px;
+    }
+    .help_image img {
+        width: 100% !important;
+    }
+    .image_wrap {
+        display: flex !important;
+        width: 30%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .blog_item img {
+        max-width: 270px !important;
+    }
+    .affordable_plan {
+        max-width: 270px !important;
+        padding: 15px !important;
+    }
+    .help_bottom_left p {
+        max-width: 334px;
+        margin-left: 14px;
+    }
+    .partners_imag {
+        width: 200px !important;
+        margin-top: 30px !important;
+    }
+    .info_bottom_right div {
+        font-size: 12px
+    }
+    .help_bottom_left button {
+        border: none;
+        width: 152px;
+        height: 54px;
+        padding: 12px 5px;
+    }
+
 }
 @media only screen and (max-width:860px){
     .home_aboutUs {
@@ -813,6 +866,7 @@ text-align: center;
     .affordable_plan {
         max-width: 252px !important;
         margin-top: 0 !important;
+        padding: 15px !important;
     }   
     .affordable-check {
         font-size: 11px !important;   
@@ -824,7 +878,7 @@ text-align: center;
         margin-top: 30px !important;
     } 
     .blog_item img {
-        max-width: 252px !important;
+        max-width: 240px !important;
     } 
     .blog_item h6{
         max-width: 252px !important;
@@ -849,9 +903,23 @@ text-align: center;
         display: flex;
         justify-content: center ;
     }
-    
+    .what-we-do-sections ul {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
     
 }
+@media only screen and (max-width: 800px) {
+    .blog_item img {
+        max-width: 225px !important;
+    }
+    .partners_imag {
+        width: 350px !important;
+    }
+}
+
 @media only screen and (max-width:765px){
     .home_text {
         text-align: center;
@@ -959,6 +1027,197 @@ text-align: center;
         flex-direction: column;
         align-items: center;
     }
-
+    .home_tite {
+        font-size: 33px;
+    }
+    .home_text {
+        text-align: center;
+        width: 80%;
+        margin-bottom: 30px;
+    }
+    .home_about_imag {
+        transform: translateX(7%);
+    }
 }
-
+@media only screen and (max-width: 700px) {
+    .blog_item img {
+        max-width: 670px !important;
+    }
+   .client_text {
+        width: auto !important;
+    }
+    .help_image {
+        width: 600px;
+    }
+}
+@media only screen and (max-width: 665px) {
+    .home_tite {
+        font-size: 28px !important;
+    }
+    .home_text {
+        text-align: center;
+        width: 580px !important;
+        margin-bottom: 30px;
+    }
+    .home_about_imag {
+        transform: translateX(1%);
+    }
+    .help_image div {
+        width: 600px;
+    }
+    .wgat_we_do_image {
+        height: auto;
+        width: 44%;
+    }
+    .client_text {
+        width: auto !important;
+        margin: 0px 0 10px;
+     }
+     .blog_item img {
+        max-width: 600px !important;
+    }
+    .partners_top h4 {
+        font-size: 30px !important;
+        margin-bottom: 20px !important;
+    }
+}
+@media only screen and (max-width: 610px) {
+    .help_image img {
+        max-width: 550px !important;
+    }
+    .blog_item img {
+        max-width: 550px !important;
+    }
+    .help_image div {
+        display: flex;
+        justify-content: flex-start;
+    }
+    .hom_buttom h2 {
+        font-size: 28px !important;
+        width: 95% !important;
+    }
+}
+@media only screen and (max-width: 590px) {
+    .home_tite {
+        font-size: 20px !important;
+    }
+    .home_text {
+        text-align: center;
+        width: 500px !important;
+    }
+    .home_about_imag {
+        width: 95% !important;
+        height: auto;
+    }
+    .help_image img {
+        max-width: 90% !important;
+    }
+    .help_bottom_left p {
+        max-width: 90% !important;
+    }
+    .blog_item img {
+        max-width: 99% !important;
+    }
+    .help_image {
+        width: 95% !important;
+    }
+    .help_image div {
+        width: 95% !important;
+    }
+}
+@media only screen and (max-width: 575px) {
+    .help_image img {
+        max-width: 80% !important;
+    }
+}
+@media only screen and (max-width: 520px) {
+    .help_image img {
+        max-width: 100% !important;
+    }
+    .help_bottom_left p {
+        max-width: 80% !important;
+    }
+}
+@media only screen and (max-width: 480px) {
+ 
+    .home_tite {
+        font-size: 20px !important;
+    }
+    .home_text {
+        width: 60% !important;
+        font-size: 12px !important;
+    }
+    .home_about_imag {
+        width: 380px;
+        height: 488px;
+        transform: translateX(1%);
+    }
+    .home_aboutUs {
+        padding-right: 15px;
+    }
+    .info_bottom_left {
+        gap: 20px;
+    }
+  
+    .about_info_top h3 {
+        width: 95%;
+    }
+    .info_bottom_right div {
+        font-size: 11px;
+    }
+    .help_image {
+        width: 448px;
+    }
+    .help_image div {
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+    }
+    .help_image img {
+        width: 380px !important;
+    }
+    .wgat_we_do_image {
+        width: 91%;
+    }
+    .client_text {
+        width: 100% !important;
+    }
+    .blog_titel h4 {
+        font-size: 28px !important;
+    }
+    .blog_item img {
+        max-width: 410px !important;
+    }
+    .partners_top h4 {
+        font-size: 23px !important;
+        margin-bottom: 0 !important;
+    }
+    .hom_buttom h2 {
+        font-size: 28px !important;
+        width: 95% !important;
+        padding: 0 !important;
+    }
+    .help_bottom_left p {
+        max-width: 400px !important;
+        margin-left: 0;
+    }
+}
+  @media only screen and (max-width: 420px) {
+    .blog_item img {
+        max-width: 95% !important;
+    }
+        .blog_item img {
+            max-width: 95% !important;
+        }
+        .home_tite {
+            width: 390px !important;
+        }
+        .home_text {
+            width: 390px !important;
+            font-size: 12px !important;
+        }
+        .about_help h3 {
+            font-size: 28px;
+        }
+    
+}
