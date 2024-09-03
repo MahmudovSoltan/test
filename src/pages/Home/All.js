@@ -15,7 +15,6 @@ function All() {
     const [load,setLoad]=useState(false)
     const [btn,setBtn]=useState(true)
 
-
       const  changeLoad=()=>{
         if (load==false && btn==true) {
           setLoad(true)

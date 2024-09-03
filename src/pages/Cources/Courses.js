@@ -2,18 +2,17 @@ import React, { useState } from 'react'
 import '../../Css/Courses.css'
 import { FaChevronRight } from "react-icons/fa6";
 import { IoFilterSharp } from "react-icons/io5";
-import img1 from '../../layouts/image/case4.webp'
 import { IoIosArrowForward } from "react-icons/io";
 import { IoIosArrowBack } from "react-icons/io";
+import { useSelector ,useDispatch } from "react-redux";
+import { setIndex ,setindex2} from "../../Redux/Slice/Product";
 function Courses() {
-const [change,setChange]=useState(true)
 
-const onclickChange=()=>{
-setChange(false)
-}
-const onclickChange2=()=>{
-  setChange(true)
-  }
+const disPatc = useDispatch()
+
+  const { products ,index } = useSelector((state) => state.product);
+ 
+  const newpagination = products.slice((index - 1) * 6, index * 6);
 
   return (
     <div className='courses'>  
@@ -43,151 +42,70 @@ const onclickChange2=()=>{
         </div>
       </div>
 
-      {
-        change?
-      <div className='courser_paginations'>
-        <div className='courser_pagination'>
-          <div className='pagination_img'>
-<img src={img1} alt='01' />
-<div className='price'>Free</div>
-
-          </div>
-          <h6>Building a business on the Internet</h6>
-          <div className='after_line'><span >4 lesson</span> <span>100 weeks</span></div>
-
-        </div>
-        <div className='courser_pagination'>
-          <div className='pagination_img'>
-<img src="https://coaching.thimpress.com/business-consulting/wp-content/uploads/sites/52/2022/09/course-thumb-02-600x450.jpg" alt='02' />
-<div className='price'>$80.00</div>
-
-          </div>
-          <h6>Business Analytics Course Program(Data Scientist)</h6>
-          <div className='after_line'><span >4 lesson</span> <span>100 weeks</span></div>
-
-        </div>
-        <div className='courser_pagination'>
-          <div className='pagination_img'>
-<img src='https://coaching.thimpress.com/business-consulting/wp-content/uploads/sites/52/2022/09/course-thumb-03-600x450.jpg' alt='03' />
-<div className='price'>$30.00</div>
-
-          </div>
-          <h6>Mini MBA Course – Lean Business Administration</h6>
-          <div className='after_line'><span >4 lesson</span> <span>100 weeks</span></div>
-
-        </div>
-        <div className='courser_pagination'>
-          <div className='pagination_img'>
-<img src='https://coaching.thimpress.com/business-consulting/wp-content/uploads/sites/52/2022/09/course-thumb-04-600x450.jpg' alt='04'  />
-<div className='price'>$36.00</div>
-
-          </div>
-          <h6>Professional Course Of Sales Skills And Customer Care</h6>
-          <div className='after_line'><span >4 lesson</span> <span>100 weeks</span></div>
-
-        </div>
-        <div className='courser_pagination'>
-          <div className='pagination_img'>
-<img src='https://coaching.thimpress.com/business-consulting/wp-content/uploads/sites/52/2022/09/course-thumb-05-600x450.jpg' alt='05'  />
-<div className='price'>$55.00</div>
-
-          </div>
-          <h6>Method of online business from home with Authority Site</h6>
-          <div className='after_line'><span >4 lesson</span> <span>100 weeks</span></div>
-
-        </div>
-        <div className='courser_pagination'>
-          <div className='pagination_img'>
-<img src='https://coaching.thimpress.com/business-consulting/wp-content/uploads/sites/52/2022/09/course-thumb-06-600x450.jpg' alt='06' />
-<div className='price'>Free</div>
-
-          </div>
-          <h6>Building a business on the Internet</h6>
-          <div className='after_line'><span >4 lesson</span> <span>100 weeks</span></div>
-
-        </div>
-
-
-
-
-
-      </div>:
-      <div className='courser_paginations'>
-        <div className='courser_pagination'>
-          <div className='pagination_img'>
-<img src='https://coaching.thimpress.com/business-consulting/wp-content/uploads/sites/52/2022/09/course-thumb-07-600x450.jpg' alt='07' />
-<div className='price'>$60.00</div>
-
-          </div>
-          <h6>Effective online business method for products</h6>
-          <div className='after_line'><span >4 lesson</span> <span>100 weeks</span></div>
-
-        </div>
-        <div className='courser_pagination'>
-          <div className='pagination_img'>
-<img src="https://coaching.thimpress.com/business-consulting/wp-content/uploads/sites/52/2022/09/course-thumb-08-600x450.jpg" alt='08' />
-<div className='price'>Free</div>
-
-          </div>
-          <h6>Complete retail on Facebook, Zalo, Shopee to have thousands of orders</h6>
-          <div className='after_line'><span >6 lesson</span> <span>10 weeks</span></div>
-
-        </div>
-        <div className='courser_pagination'>
-          <div className='pagination_img'>
-<img src='https://coaching.thimpress.com/business-consulting/wp-content/uploads/sites/52/2022/09/course-thumb-09-600x450.jpg' alt='09' />
-<div className='price'>$69.00</div>
-
-          </div>
-          <h6>Make money from selling on Smartphone</h6>
-          <div className='after_line'><span >5 lesson</span> <span>10 weeks</span></div>
-
-        </div>
-        <div className='courser_pagination'>
-          <div className='pagination_img'>
-<img src='https://coaching.thimpress.com/business-consulting/wp-content/uploads/sites/52/2022/09/course-thumb-10-600x450.jpg' alt='10'  />
-<div className='price'>$75.00</div>
-
-          </div>
-          <h6>Complete set of Marketing, the art of selling online from basic to actual sales, billions of...</h6>
-          <div className='after_line'><span >3 lesson</span> <span>10 weeks</span></div>
-
-        </div>
-        <div className='courser_pagination'>
-          <div className='pagination_img'>
-<img src='https://coaching.thimpress.com/business-consulting/wp-content/uploads/sites/52/2022/09/course-thumb-11-600x450.jpg' alt='11'  />
-<div className='price'>$99.00</div>
-
-          </div>
-          <h6>Implement your own online business</h6>
-          <div className='after_line'><span >4 lesson</span> <span>10 weeks</span></div>
-
-        </div>
-        <div className='courser_pagination'>
-          <div className='pagination_img'>
-<img src='https://coaching.thimpress.com/business-consulting/wp-content/uploads/sites/52/2022/09/course-thumb-12-600x450.jpg' alt='12' />
-<div className='price'>$94.00</div>
-
-          </div>
-          <h6>Learn Amazon Dropshiping from idea to practice.</h6>
-          <div className='after_line'><span >8 lesson</span> <span>10 weeks</span></div>
-
-        </div>
-
-
-
-
-
+      <div className="courser_paginations">
+        {newpagination.map((a, i) => {
+          return (
+           
+            <div className="courser_pagination" key={i}>
+              <div className="pagination_img">
+                <img src={a.img} alt="02" />
+                <div className="price">{a.price}</div>
+              </div>
+              <h6>{a.name}</h6>
+              <div className="after_line">
+                <span>{a.lessons} lessons</span> <span> {a.week} weeks</span>
+              </div>
+            </div>
+          );
+        })}
       </div>
-      }
+
+      <div className=" d-flex chance_page">
+        <div
+             onClick={() => {
+               if (index > 1) {
+              }
+              disPatc(setindex2());
+            }}
+          className={`${index === 1 ? "ds-none" : "White"}`}
+        >
+     <IoIosArrowBack/>
+        </div>
+        <div
+         onClick={() => {
+          if (index > 1) {
+            disPatc(setindex2()); 
+          }
+        }}
+
+          className={`${index === 1 ? "black" : "White"}`}
+        >
+          1
+        </div>
+        <div
+            onClick={() => {
+              if (index < 2) {
+                disPatc(setIndex()); // 
+              }
+            }}
+          className={`${index === 2 ? "black" : "White"}`}
+        >
+          2
+        </div>
+        <div
+         onClick={() => {
+          if (index >= 1) {
+            disPatc(setIndex()); // Redux'ta index azaltılıyor
+          }
+        }}
+          className={`${index === 2 ? "ds-none" : "White"}`}
+        >
+          <IoIosArrowForward/>
+        </div>
+      </div>
 
 
-      <div className="chance_page">
-        {!change&&<div onClick={onclickChange2} className="White"><IoIosArrowBack/></div>}
-        <div onClick={onclickChange2} className={change ? 'black' : 'White'}>1</div>
-        <div onClick={onclickChange} className={change ? 'White' : 'black'}>2</div> 
-        { change&&<div onClick={onclickChange} className="White"><IoIosArrowForward/></div>}  
-         </div>
+
      </section>
 
 

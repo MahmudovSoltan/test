@@ -23,7 +23,7 @@ import AboutUs from './pages/Pages/AboutUs';
 import CourseLeyouteOne from './pages/Cources/CourseLeyouteOne';
 import CourseLeyouteTwo from './pages/Cources/CourseLeyouteTwo';
 import ProjectDetail from  './pages/Projects/ProjectDetail'
-import StartUp from './pages/Ouer Services/StartUp'
+
 function App() {
 const [playState,setPlayState]=useState(false)
   return (
